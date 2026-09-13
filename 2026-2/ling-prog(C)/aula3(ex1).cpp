@@ -3,15 +3,21 @@
 
 int main()
 {
-    /* Apresentar todos os números divisíveis por 5 que sejam menores que 55 utilizando a lógica de dividir o numero por 5 e verificar se o resto é zero e exibindo somente o número */
-    for (int i = 1; i < 55; i++)
-    {
-        if (i % 5 == 0)
-        {
-            printf("%d ", i);
-        }
-    }
-    printf("\n");
-    system("pause");
-    return 0;
+   /* Elaborar um programa que apresente o valor de uma potencia de uma base (N) qualquer elevada a um expoente (M) qualquer, ou seja, de NM */
+   int N, M, i;
+   long long potencia = 1;
+
+   printf("Digite a base: ");
+   scanf("%d", &N);
+   printf("Digite o expoente: ");
+   scanf("%d", &M);
+
+   for (i = 0; i < M; i++)
+   {
+       potencia *= N;
+   }
+
+   printf("O valor de %d^%d e: %lld\n", N, M, potencia);
+   system("pause");
+   return 0;
 }
