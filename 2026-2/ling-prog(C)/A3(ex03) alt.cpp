@@ -3,7 +3,7 @@
 
 int main()
 {
-    /* Apresentar todos os números divisíveis por 5 que sejam menores que 55 utilizando a lógica de dividir o numero por 5 e verificar se o resto é zero e exibindo somente o número */
+    printf("Os numeros divisiveis por 5 que sao menores que 55 sao:\n"); 
     for (int i = 1; i < 55; i++)
     {
         if (i % 5 == 0)
