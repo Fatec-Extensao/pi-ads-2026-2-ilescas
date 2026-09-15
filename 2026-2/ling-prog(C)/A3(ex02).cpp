@@ -10,5 +10,6 @@ int main()
     }
     printf("\nA logica desse script foi feita adicionando +2 a partir do primeiro impar e mostrando todos os numero ate o 199\n");
     system("pause");
+    printf ('\n')
     return 0;
 }
