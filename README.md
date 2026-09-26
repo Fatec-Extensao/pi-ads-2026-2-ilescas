@@ -19,11 +19,12 @@
 
 | Nome do Aluno | GitHub / Perfil |
 | :--- | :--- |
-| Nome Aluno 1 | [@usuario1](https://github.com/usuario1) |
-| Nome Aluno 2 | [@usuario2](https://github.com/usuario2) |
-| Nome Aluno 3 | [@usuario3](https://github.com/usuario3) |
-| Nome Aluno 4 | [@usuario4](https://github.com/usuario4) |
-
+| Gustavo Martins da Silva Ilescas | [@Gustavo Ilescas](https://github.com/GustavoIlescas) |
+| Giovanni Vieira Pereira da Silva | [@GiovanniVP](https://github.com/GiovanniVP) |
+| Matheus Gabriel dos Santos Silva | [@uBzMatheus](https://github.com/BzMatheus) |
+| Alex Marola Barbosa Júnior | [@alex-m-b-jr](https://github.com/alex-m-b-jr) |
+| Wagner Alves de Sousa | [@souzaws](https://github.com/sousaws) |
+| Erick Gustavo Miiller dos Santos | [@miiller01](https://github.com/miiller01) |
 ---
 
 ## 📌 Visão Geral do Projeto
@@ -77,10 +78,11 @@ As entregas da disciplina devem ser organizadas na pasta `/2026-2` conforme o ma
 
 ```text
 2026-2/
-├── desenvolvimento-web/                  # Site Web publicado ou Protótipo navegável de alta fidelidade
+├── desenvolvimento-web/  # Site Web publicado ou Protótipo navegável de alta fidelidade
 ├── engenharia-software/  # Documentação de Modelagem de Sistemas (Diagramas UML)
 ├── banco-de-dados/       # Projeto de Banco de Dados (DER/MER e Script de criação SQL)
 └── seguranca/            # Relatório de análise de riscos básicos e conformidade LGPD
 
-Link da Aplicação/Site Publicado: [Cole aqui o link público da solução]
+Link da Aplicação/Site Publicado: [sem link]
 Evidências Adicionais: Links para gravação de reuniões, fotos de validação com o cliente e documentações técnicas complementares.
+
