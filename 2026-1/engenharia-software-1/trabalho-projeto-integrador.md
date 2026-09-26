@@ -333,7 +333,7 @@ Professor: Acesso somente para responder questionário.
 
 | Atores | Requisitos do sistema | O que espera que acontece |
 
-| --- | --- | --- |
+| :--- | :--- | :--- |
 
 | Gestores educacionais | Manter pesquisas | Vai ser possível criar as pesquisas, colando o nome da pesquisa, uma descrição para a pesquisa, um período de aplicação para a pesquisa e por fim, seu status, se ela está ativa ou inativa. Podera editar essas informações e também excluir caso desejado, tanto a pesquisas quanto informações |
 
@@ -355,4 +355,4 @@ Professor: Acesso somente para responder questionário.
 
 | Professores | Responder o Questionário | O usuário vai colocar a senha que lhe foi passada no campo de senhas, assim aparecera o questionário com as perguntas a serem respondidas |
 
-| --- | --- | --- |
+| :--- | :--- | :--- |
