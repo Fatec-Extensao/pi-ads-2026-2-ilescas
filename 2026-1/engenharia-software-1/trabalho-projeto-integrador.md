@@ -331,26 +331,14 @@ Professor: Acesso somente para responder questionário.
 
 
 
-| Atores | Requisitos do sistema | O que espera que acontece |
-
+| Atores | Requisitos do sistema | O que espera que aconteça |
 | :--- | :--- | :--- |
-
-| Gestores educacionais | Manter pesquisas | Vai ser possível criar as pesquisas, colando o nome da pesquisa, uma descrição para a pesquisa, um período de aplicação para a pesquisa e por fim, seu status, se ela está ativa ou inativa. Podera editar essas informações e também excluir caso desejado, tanto a pesquisas quanto informações |
-
-| Gestores educacionais | Manter questionários | Aqui o usuário vai criar ao questionário, vai colocar enunciados e respostas para as questões do questionário. Será possível editar perguntas e excluir também. |
-
-| Gestores educacionais | Gerar senhas para o anonimato | Vai ser possível gerar senhas de acesso aos questionários por suas respetivas categorias |
-
-| Gestores educacionais | Baixar senhas | Vai ser possível baixar essas senhas |
-
-| Gestores educacionais | Criar Dashboard | O sistema vai criar um dashboard conforme as informações da pesquisa: Qual o total de senhas geradas, o total de respostas recebidas, a taxa de participação e a participação por categoria |
-
-| Gestores educacionais | Criar Relatórios das pesquisas | O sistema criara relatórios analíticos com base nos resultados por perguntas, resultado por categoria, comparação entre categoria e visualizar em gráficos as informações também |
-
-| Gestores educacionais | Exportar os relatórios, gráficos e dashboards | Vai permitir que o usuário exporte esses dados |
-
-| Alunos | Responder o Questionário | O usuário vai colocar senha que lhe foi passada no campo de senhas, assim aparecera o questionário com as perguntas a serem respondidas |
-
-
-
-| Professores | Responder o Questionário | O usuário vai colocar a senha que lhe foi passada no campo de senhas, assim aparecera o questionário com as perguntas a serem respondidas |
+| Gestores educacionais | Manter pesquisas | Será possível criar pesquisas, informando o nome da pesquisa, uma descrição, um período de aplicação e seu status (ativa ou inativa). Também será possível editar essas informações e excluir pesquisas quando desejado. |
+| Gestores educacionais | Manter questionários | O usuário poderá criar questionários, adicionando enunciados e respostas para as questões. Também será possível editar e excluir perguntas. |
+| Gestores educacionais | Gerar senhas para o anonimato | Será possível gerar senhas de acesso aos questionários de acordo com suas respectivas categorias. |
+| Gestores educacionais | Baixar senhas | Será possível baixar as senhas geradas. |
+| Gestores educacionais | Criar Dashboard | O sistema criará um dashboard conforme as informações da pesquisa, apresentando o total de senhas geradas, o total de respostas recebidas, a taxa de participação e a participação por categoria. |
+| Gestores educacionais | Criar relatórios das pesquisas | O sistema criará relatórios analíticos com base nos resultados das perguntas, resultados por categoria e comparações entre categorias, além de apresentar as informações em gráficos. |
+| Gestores educacionais | Exportar os relatórios, gráficos e dashboards | O sistema permitirá que o usuário exporte os relatórios, gráficos e dashboards. |
+| Alunos | Responder o questionário | O usuário informará a senha que lhe foi fornecida no campo de acesso. Após a validação da senha, o questionário será apresentado com as perguntas a serem respondidas. |
+| Professores | Responder o questionário | O usuário informará a senha que lhe foi fornecida no campo de acesso. Após a validação da senha, o questionário será apresentado com as perguntas a serem respondidas. |
