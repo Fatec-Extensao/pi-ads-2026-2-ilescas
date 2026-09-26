@@ -18,7 +18,7 @@
 
 | Nome do Aluno | GitHub / Perfil |
 | :--- | :--- |
-| Gustavo Martins da Silva Ilescas | [@Gustavo_Ilescas](hhttps://github.com/GustavoIlescas) |
+| Gustavo Martins da Silva Ilescas | [@Gustavo Ilescas](https://github.com/GustavoIlescas) |
 | Giovanni Vieira Pereira da Silva | [@GiovanniVP](https://github.com/GiovanniVP) |
 | Matheus Gabriel dos Santos Silva | [@uBzMatheus](https://github.com/BzMatheus) |
 | Alex Marola Barbosa Júnior | [@alex-m-b-jr](https://github.com/alex-m-b-jr) |
