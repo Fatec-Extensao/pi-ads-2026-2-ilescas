@@ -21,7 +21,7 @@
 | :--- | :--- |
 | Gustavo Martins da Silva Ilescas | [@Gustavo Ilescas](https://github.com/GustavoIlescas) |
 | Giovanni Vieira Pereira da Silva | [@GiovanniVP](https://github.com/GiovanniVP) |
-| Matheus Gabriel dos Santos Silva | [@uBzMatheus](https://github.com/BzMatheus) |
+| Matheus Gabriel dos Santos Silva | [@BzMatheus](https://github.com/BzMatheus) |
 | Alex Marola Barbosa Júnior | [@alex-m-b-jr](https://github.com/alex-m-b-jr) |
 | Wagner Alves de Sousa | [@souzaws](https://github.com/sousaws) |
 | Erick Gustavo Miiller dos Santos | [@miiller01](https://github.com/miiller01) |
