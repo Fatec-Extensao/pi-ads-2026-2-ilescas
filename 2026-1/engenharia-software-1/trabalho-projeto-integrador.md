@@ -354,5 +354,3 @@ Professor: Acesso somente para responder questionário.
 
 
 | Professores | Responder o Questionário | O usuário vai colocar a senha que lhe foi passada no campo de senhas, assim aparecera o questionário com as perguntas a serem respondidas |
-
-| :--- | :--- | :--- |
