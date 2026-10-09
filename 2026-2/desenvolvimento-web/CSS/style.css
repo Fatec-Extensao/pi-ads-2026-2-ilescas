@@ -1,0 +1,102 @@
+/* Reset básico e tipografia */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sansation', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Estilo do Topo e Seções */
+main, section {
+  background: #ffffffd2;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: #1a365d;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #2b6cb0;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+h3 {
+  color: #2d3748;
+  margin: 15px 0 10px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+a {
+  color: #3182ce;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo da Lista de Funcionalidades */
+.lista-funcionalidades {
+  list-style: none;
+  margin-left: 0;
+}
+
+.lista-funcionalidades li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.status-wip {
+  background-color: #fffaf0;
+  color: #c05621;
+  padding: 10px;
+  border-left: 4px solid #dd6b20;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #718096;
+  font-size: 0.9rem;
+}

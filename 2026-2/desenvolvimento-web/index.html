@@ -1,26 +1,89 @@
 <!doctype html>
-<html lang="pt_BR">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Índice</title>
+    <title>Página Principal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <!-- Cabeçalho com título, descrição e direcionamento de páginas -->
     <main>
-      <header>
-        <h1>Sistema Web para Gestão de Pesquisas por Questionário</h1>
-        <h2>Bem vindo ao nosso projeto!</h2>
-        <ul>
-          <li><a href="login.html">Página de Login</a></li>
-          <li><a href="main.html">Página Principal</a></li>
-        </ul>
-      </header>
+      <h1>Dashboard</h1>
+      <h2>Bem-vindo ao Dashboard</h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Retornar ao Índice</a></li>
+        <li><a href="login.html">Página de Login</a></li>
+      </ul>
     </main>
 
-    <!-- Seção: Sobre o Projeto -->
-    <section id="Sobre">
-      <h2>Sobre o Projeto</h2>
+    <!-- Conteúdo do site -->
+    <section id="conteudo-site">
+      <h2>Conteúdo do Site</h2>
+      <p>Ir para <a href="#objetivo">Objetivo</a></p>
+      <p>Ir para <a href="#visao-geral">Visão Geral</a></p>
+      <p>Ir para <a href="#visao-escopo">Visão de Produto e Escopo</a></p>
+      <p>Ir para <a href="#funcionalidades">Funcionalidades</a></p>
+    </section>
+
+    <!-- Seção: Objetivo do projeto -->
+    <section id="objetivo">
+      <h2>Objetivo 🎯</h2>
+      <p>
+        O propósito central do projeto é fornecer uma ferramenta tecnológica
+        capaz de estruturar, aplicar e analisar pesquisas institucionais de
+        forma totalmente organizada, segura e anônima.
+      </p>
+      <p>
+        O desenvolvimento deste software está contextualizado dentro de uma
+        abordagem prática de engenharia de software. Ele engloba desde o
+        levantamento e análise de requisitos até a modelagem de dados,
+        implementação das interfaces web orientadas à usabilidade, mecanismos
+        rigorosos de segurança da informação e a consolidação de dados em
+        relatórios analíticos.
+      </p>
+      <p>
+        O escopo define-se pela criação de uma plataforma centralizada voltada
+        para Gestores Educacionais, atuando como administradores do sistema, e
+        para as categorias de respondentes, inicialmente representadas por
+        Alunos e Professores. A solução proposta visa mitigar os desafios comuns
+        em coletas de dados institucionais — como o retrabalho na tabulação e o
+        risco de quebra de confidencialidade — por meio de três pilares
+        fundamentais:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Gerenciamento Flexível:</strong> Permitir que administradores configurem
+          pesquisas temporais e customizem questionários específicos de acordo
+          com a categoria do participante.
+        </li>
+        <li>
+          <strong>Anonimato Garantido:</strong> Utilizar um modelo disruptivo de autenticação
+          baseado em lotes de senhas aleatórias e de uso único. Isso desvincula
+          completamente a identidade civil do respondente de suas respostas
+          armazenadas.
+        </li>
+        <li>
+          <strong>Inteligência de Dados:</strong> Transformar as respostas brutas coletadas em
+          informações visuais acionáveis através de dashboards de monitoramento
+          em tempo real e relatórios estatísticos exportáveis.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Seção: Visão Geral -->
+    <section id="visao-geral">
+      <h2>Visão Geral 💡</h2>
       <p>
         O projeto consiste no desenvolvimento de um Sistema Web para Gestão de
         Pesquisas por Questionário, concebido para automatizar o ciclo completo
@@ -28,6 +91,99 @@
         resultados — com foco rigoroso na segurança e no anonimato dos
         participantes.
       </p>
+      <h3>Principais Usuários</h3>
+      <ul>
+        <li>Gestores Educacionais (Perfil administrador)</li>
+        <li>Alunos (Perfil respondente)</li>
+        <li>Professores (Perfil respondente)</li>
+      </ul>
+    </section>
+
+    <!-- Seção: Visão de Produto e Escopo -->
+    <section id="visao-escopo">
+      <h2>Visão de Produto e Escopo 🔎</h2>
+      <p>
+        O Sistema Web para Gestão de Pesquisas por Questionário é uma solução de
+        software voltada para o ambiente institucional de ensino. O produto
+        posiciona-se como uma plataforma web integrada de duas frentes:
+      </p>
+      <ul>
+        <li>
+          Uma interface de gestão restrita a administradores (Gestores
+          Educacionais), dedicada ao controle, parametrização e monitoramento
+          analítico das pesquisas;
+        </li>
+        <li>
+          Uma interface pública, simples e responsiva para os respondentes
+          (Alunos e Professores), com foco exclusivo na coleta de dados com
+          garantia de anonimato.
+        </li>
+      </ul>
+      <p>Visando:</p>
+      <ul>
+        <li>Análise de resultados;</li>
+        <li>Facilidade de uso;</li>
+        <li>Anonimato para os usuários.</li>
+      </ul>
+      <p>
+        Os pilares fundamentais do software centram-se na facilidade de uso da
+        plataforma e na garantia de anonimato absoluto para os usuários,
+        assegurada por meio de senhas de acesso de uso único que desvinculam a
+        identidade do participante de suas respostas, culminando em uma
+        posterior análise de resultados automatizada para a gestão.
+      </p>
+    </section>
+
+    <!-- Seção: Funcionalidades -->
+    <section id="funcionalidades">
+      <h2>Funcionalidades (Recursos Funcionais) 🚀</h2>
+      <p class="status-wip">Todas as funcionalidades estão em desenvolvimento. (WIP)</p>
+      <ul class="lista-funcionalidades">
+        <li>
+          <span>Cadastrar pesquisas</span>
+          <a href="pages/cadastrar-pesquisa.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Cadastrar categorias dos participantes</span>
+          <a href="pages/cadastrar-categoria.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Confirmar respostas</span>
+          <a href="pages/confirmar-resposta.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Gerar relatórios</span>
+          <a href="pages/gerador-relatorios.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Gerar questionários</span>
+          <a href="pages/criar-questionario.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Retomar pesquisas</span>
+          <a href="pages/retomar-questionario-em-progresso.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Iniciar questionários</span>
+          <a href="pages/iniciar-questionario.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Dashboard</span>
+          <a href="pages/dashboard.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Banco de senhas</span>
+          <a href="pages/banco-senhas.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Página do administrador</span>
+          <a href="pages/admin-dashboard.html">Ir para a página →</a>
+        </li>
+        <li>
+          <span>Página Modelo (usada para criar as outras páginas)</span>
+          <a href="pages/model-page.html">Ir para a página →</a>
+        </li>
+      </ul>
     </section>
 
     <footer>
