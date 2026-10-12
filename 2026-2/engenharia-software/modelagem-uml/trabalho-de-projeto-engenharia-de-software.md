@@ -173,8 +173,9 @@ O sistema deverá atender aos seguintes requisitos:
 
 ## Modelagem UML e Casos de Uso
 
-### 1. Manter Pesquisas
+### 1. Gerenciar Pesquisas
 *(Diagrama UML: Gestor Educacional estende Criar, Editar, Excluir)*
+![Diagrama Gerenciar Pesquisas](2026-2\engenharia-software\modelagem-uml\uml-manter-pesquisas.png)
 
 * **FP1: Criar Pesquisa**
   1. Abre formulário para criar pesquisa.
@@ -224,6 +225,7 @@ O sistema deverá atender aos seguintes requisitos:
 
 ### 2. Gerar senhas para o anonimato
 *(Diagrama UML: Gestor Educacional inclui Módulo de Relatório e Módulo de Dashboard)*
+![Diagrama Gerar Senhas](pi-ads-2026-2-ilescas\2026-2\engenharia-software\modelagem-uml\uml-gerar-senhas-para-o-anonimato.png)
 
 * **FP1: Geração de Senhas**
   1. O Gestor Educacional realiza o login no sistema.
@@ -251,6 +253,7 @@ O sistema deverá atender aos seguintes requisitos:
 
 ### 3. Responder Questionários
 *(Diagrama UML: Gestores educacionais, Professores, Alunos acessam a pesquisa, com extensão para Armazenar pesquisa)*
+![Diagrama Responder Questionários](pi-ads-2026-2-ilescas\2026-2\engenharia-software\modelagem-uml\uml-responder-questionários.png)
 
 * **FP1: Acesso à pesquisa**
   1. Sistema carrega o app na interface padrão.
@@ -282,6 +285,7 @@ O sistema deverá atender aos seguintes requisitos:
 
 ### 4. Criar Dashboard
 *(Diagrama UML: Gestores educacionais realizam login e acessam o Dashboard)*
+![Diagrama Criar Dashboard](pi-ads-2026-2-ilescas\2026-2\engenharia-software\modelagem-uml\uml-criar-dashboard.png)
 
 * **FP1: Dashboard**
   1. O Gestor Educacional realiza login no sistema.
