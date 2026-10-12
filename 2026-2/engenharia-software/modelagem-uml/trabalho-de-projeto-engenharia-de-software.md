@@ -175,7 +175,7 @@ O sistema deverá atender aos seguintes requisitos:
 
 ### 1. Gerenciar Pesquisas
 *(Diagrama UML: Gestor Educacional estende Criar, Editar, Excluir)*
-![Diagrama Gerenciar Pesquisas](2026-2\engenharia-software\modelagem-uml\uml-manter-pesquisas.png)
+![Diagrama Gerenciar Pesquisas](uml-manter-pesquisas.png)
 
 * **FP1: Criar Pesquisa**
   1. Abre formulário para criar pesquisa.
