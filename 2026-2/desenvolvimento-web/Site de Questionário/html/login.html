@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+<body>
+    <!-- cabeçalho -->
+    <header>
+        <h1>Acesso ao Sistema de Questionários</h1>
+    </header>
+    <!-- menu de navegação simplificado -->
+    <nav class="letterbox">
+        <p><a href="index.html" class="botao">← Voltar para a Página Inicial</a></p>
+        <hr>
+    </nav>
+    <!-- conteúdo principal - tela de login -->
+    <main class="letterbox">
+        <h2>Autenticação Anônima</h2>
+        <p>Para garantir a confidencialidade das suas respostas, o acesso ao sistema não requer seu nome ou e-mail. Utilize apenas o <strong>Token de Acesso Institucional</strong> que foi fornecido a você pela coordenação ou gestão educacional.</p>
+        <!-- formulário de login -->
+        <!-- a linha do atributo 'action="main.html"' faz com que, ao inserir o token correto, o usuário seja redirecionado para a tela principal -->
+        <form action="main.html" method="GET">
+            <fieldset class="letterbox">
+                <legend>Insira sua credencial</legend>
+                <p>
+                    <label for="token"><strong>Token de Acesso:</strong></label><br>
+                    <input type="password" id="token" name="token" placeholder="Ex: A123456XYZ" required size="30">
+                </p>
+                <p>
+                    <button type="submit" class="botao-validar">Validar Token e Entrar</button>
+                </p>
+            </fieldset>
+        </form>
+        <section class="in-letterbox">
+            <h3>Não possui um token?</h3>
+            <p>Os tokens são gerados individualmente e distribuídos de forma segura. Se você é aluno ou professor e ainda não recebeu o seu token de acesso, por favor, entre em contato com a secretaria da sua unidade.</p>
+        </section>
+    </main>
+    <br>
+    <!-- rodapé -->
+    <footer class="letterbox rodape">
+        <p>&copy; 2026 - [Nome da Sua Instituição ou Projeto].</p>
+        <p><small>Seu anonimato é garantido. O token não está vinculado aos seus dados pessoais no banco de respostas.</small></p>
+    </footer>
+</body>
+</html>

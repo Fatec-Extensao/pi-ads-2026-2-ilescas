@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Pesquisas - Gestores Educacionais</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Painel Administrativo</h1>
+      <p class="letterbox">
+        Módulo de gestão: Cadastro de novos questionários para gestores.
+      </p>
+    </header>
+    <!-- link de salto para o conteúdo principal e voltar para página principal -->
+    <ul class="letterbox">
+      <li>
+        <a href="#conteudo-principal" style="position: aboslute; left: -9999px"
+          >→ Ir para o formulário de cadastro</a
+        >
+      </li>
+      <li><a href="main.html">← Voltar ao Painel Principal</a></li>
+    </ul>
+
+    <!-- menu de nevageção -->
+    <nav aria-label="Navegação Administrativa"></nav>
+    <!-- conteúdo principal -->
+    <main id="conteudo-principal">
+      <section class="letterbox">
+        <h2>Criar Nova Pesquisa</h2>
+        <p>
+          Preencha os dados abaixo para disponibilizar um novo questionário para
+          a comunidade acadêmica.
+        </p>
+        <!-- Formulário Completo de Cadastro -->
+        <form action="#" method="POST">
+          <!-- Primeiro Agrupamento: Informações Gerais -->
+          <fieldset>
+            <legend>Informações Gerais da Pesquisa</legend>
+            <p>
+              <label for="titulo"><strong>Título da Pesquisa:</strong></label
+              ><br />
+              <input
+                type="text"
+                id="titulo"
+                name="titulo"
+                placeholder="Ex: Avaliação Institucional 2026/2"
+                required
+                minlength="10"
+                aria-required="true"
+                size="50"
+              />
+            </p>
+            <p>
+              <label for="descricao"
+                ><strong>Descrição / Objetivo:</strong></label
+              ><br />
+              <textarea
+                id="descricao"
+                name="descricao"
+                rows="4"
+                cols="52"
+                placeholder="Descreva o propósito deste questionário..."
+                required
+                aria-required="true"
+              ></textarea>
+            </p>
+          </fieldset>
+          <br />
+          <!-- segundo agrupamento: prazos e Público -->
+          <fieldset>
+            <legend>Configurações de Prazo e Público</legend>
+            <p>
+              <!-- inputs de data com validação nativa -->
+              <label for="data-inicio"><strong>Data de Início:</strong></label>
+              <input
+                type="date"
+                id="data-inicio"
+                name="data_inicio"
+                required
+                aria-required="true"
+              />
+              &nbsp;&nbsp;
+              <!-- Espaço em branco -->
+              <label for="data-fim"
+                ><strong>Data de Encerramento:</strong></label
+              >
+              <input
+                type="date"
+                id="data-fim"
+                name="data_fim"
+                required
+                aria-required="true"
+              />
+            </p>
+            <p>
+              <strong>Público-Alvo (Selecione um ou mais):</strong><br />
+              <!-- Checkboxes para múltipla escolha -->
+              <input
+                type="checkbox"
+                id="publico-alunos"
+                name="publico"
+                value="alunos"
+              />
+              <label for="publico-alunos">Alunos</label><br />
+
+              <input
+                type="checkbox"
+                id="publico-professores"
+                name="publico"
+                value="professores"
+              />
+              <label for="publico-professores">Professores</label><br />
+            </p>
+          </fieldset>
+
+          <br />
+
+          <!-- terceiro agrupamento: status da publicação -->
+          <fieldset>
+            <legend>Status da Publicação</legend>
+            <p>
+              <!-- radio buttons para escolha única -->
+              <input
+                type="radio"
+                id="status-ativo"
+                name="status"
+                value="ativo"
+                required
+              />
+              <label for="status-ativo">Publicar Imediatamente (Ativo)</label
+              ><br />
+              <input
+                type="radio"
+                id="status-rascunho"
+                name="status"
+                value="rascunho"
+              />
+              <label for="status-rascunho">Salvar como Rascunho (Oculto)</label>
+            </p>
+          </fieldset>
+          <p>
+            <!-- botões de ação -->
+            <button type="submit">Cadastrar Pesquisa</button>
+            <button type="reset">Limpar Dados</button>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

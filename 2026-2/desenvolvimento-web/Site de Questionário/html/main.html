@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Principal - Questionários Institucionais</title>
+     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <!-- Link de salto para acessibilidade -->
+    <a href="#conteudo-principal" style="position: absolute; left: -9999px;">Ir para o conteúdo principal</a>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Área dos Questionários</h1>
+        <p class="letterbox">Bem-vindo(a) a área de questionários institucionais.</p>
+    </header>
+    <!-- menu de navegação -->
+    <nav aria-label="Navegação Principal" class="letterbox">
+        <h2>Menu de Navegação</h2>
+        <ul class="container-botoes">
+            <a href="index.html" class="botao">Sair do Sistema</a>
+            <a href="#conteudo-principal" class="botao">Meus Questionários</a></li>
+        </ul>
+    </nav>
+    <!-- conteúdo principal -->
+    <main id="conteudo-principal" class="letterbox">
+        <!-- Seção: meus questionários -->
+        <section id="questionarios">
+            <h2>Meus Questionários</h2>
+            <!-- tabela de dados (Template) -->
+            <table class="tabela-moderna" aria-describedby="info-tabela">
+                <thead>
+                    <tr>
+                        <th scope="col">Título da Pesquisa</th>
+                        <th scope="col">Data Limite</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">[Nome do Questionário 1]</td>
+                        <td>[DD/MM/AAAA]</td>
+                        <td>[Status 1]</td>
+                        <td><a href="#responder" aria-label="Responder ao [Nome do Questionário 1]">[Ação 1]</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">[Nome do Questionário 2]</td>
+                        <td>[DD/MM/AAAA]</td>
+                        <td>[Status 2]</td>
+                        <td><a href="#responder" aria-label="Responder ao [Nome do Questionário 2]">[Ação 2]</a></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">[Nome do Questionário 3]</td>
+                        <td>[DD/MM/AAAA]</td>
+                        <td>[Status 3]</td>
+                        <td><a href="#responder" aria-label="Responder ao [Nome do Questionário 3]">[Ação 3]</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer class="letterbox rodape">
+        <p>&copy; 2026 - [Nome da Sua Instituição ou Projeto].</p>
+        <p><small>Seu anonimato é garantido.</small></p>
+    </footer>
+</body>
+</html>

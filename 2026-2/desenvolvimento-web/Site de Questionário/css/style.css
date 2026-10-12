@@ -1,0 +1,301 @@
+
+
+body {
+    background-color:rgb(225, 225, 230)
+    font-family: Inter, sans-serif;
+    color: #3333333
+}
+
+
+/* SETTANDO IMAGEM DE FUNDO EM TELA CHEIA */
+/* 1. Zere os espaços do navegador e evite barras de rolagem indesejadas */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+/* 2. O fundo em tela cheia */
+body::before {
+    content: "../img/fatec-lins.jpg"; /* Caminho da imagem de fundo */
+    position: fixed; /* Prende a imagem na tela */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% da largura da tela (Viewport Width) */
+    height: 100vh; /* 100% da altura da tela (Viewport Height) */
+    
+    /* Configurações obrigatórias para preencher tudo */
+    background-image: url('../img/fatec-lins.jpg');
+    background-size: cover;       /* Força a imagem a preencher TODO o espaço, sem achatar */
+    background-position: center;  /* Centraliza a imagem para não cortar cabeças/detalhes importantes */
+    background-repeat: no-repeat; /* Impede que a imagem crie um mosaico se for pequena */
+    
+    /* O efeito de profundidade */
+    filter: blur(8px);
+    transform: scale(1.1); /* Dá um zoom leve para esconder a borda branca do blur */
+    z-index: -1;
+}
+
+/* SETTANDO BANNER */
+/* 1. Estilizando a caixa que cobre a parte de cima */
+.banner {
+    width: 100%;             /* Faz a caixa ocupar 100% da largura da tela */
+    background-color: #ffffff;  /* Coloquei um fundo cinza escuro, mude para a cor que quiser */
+    padding: 30px 0;         /* Dá um respiro (espaço) em cima e embaixo da imagem */
+    
+    /* Usando Flexbox para centralizar a imagem que está dentro dela */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem na horizontal */
+}
+/* 2. Ajustando a imagem para ela não quebrar a tela */
+.banner-fatec {
+    max-width: 100%;         /* Garante que a imagem nunca vaze para fora da tela */
+    height: auto;            /* Mantém a proporção original da imagem */
+    
+    /* Opcional: Você pode limitar o tamanho máximo dela */
+    /* width: 800px; */     
+    
+}
+
+h1 {
+    color:rgb(52, 55, 219)
+    font-family: Arial, sans-serif;
+    font-size: 38px;
+    text-align: center;
+
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 10px solid rgba(232, 231, 241, 0.5);
+    padding: 40px;
+}
+
+/* BOXES DE CONTEÚDO */
+/* Estilo universal para todas as caixas */
+.letterbox {
+    /* Cor branca com 75% de opacidade (o último valor '0.75' controla a transparência) */
+    background-color: rgba(200, 196, 196, 0.722);
+    
+    /* Efeito de vidro: borra o que estiver passando atrás da caixa */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Suporte para o navegador Safari */
+    
+    /* Borda muito fina e meio transparente para dar acabamento */
+    border: 1px solid rgba(232, 231, 241, 0.5);
+    
+    /* Pontas levemente circulares */
+    border-radius: 5px;
+    
+    /* Espaçamento interno para o texto não grudar nas bordas */
+    padding: 28px;
+    
+    /* Separa as caixas umas das outras (20px em cima e embaixo) e centraliza na tela (auto) */
+    margin: 13px auto;
+    
+    /* Limita a largura máxima para que o texto não fique ruim de ler em telas muito grandes */
+    max-width: 800px;
+    
+    /* Sombra suave para dar sensação de que as caixas estão flutuando */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo universal para todas as caixas */
+.in-letterbox {
+    /* Cor branca com 75% de opacidade (o último valor '0.75' controla a transparência) */
+    background-color: rgba(200, 196, 196, 0.201);
+    
+    /* Efeito de vidro: borra o que estiver passando atrás da caixa */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Suporte para o navegador Safari */
+    
+    /* Borda muito fina e meio transparente para dar acabamento */
+    border: 8px solid rgb(244, 230, 75);
+    
+    /* Pontas levemente circulares */
+    border-radius: 12px;
+    
+    /* Espaçamento interno para o texto não grudar nas bordas */
+    padding: 30px;
+    
+    /* Separa as caixas umas das outras (20px em cima e embaixo) e centraliza na tela (auto) */
+    margin:30px auto;
+    
+    /* Limita a largura máxima para que o texto não fique ruim de ler em telas muito grandes */
+    max-width: 800px;
+    
+    /* Sombra suave para dar sensação de que as caixas estão flutuando */
+    box-shadow: 0 8px 64px rgba(0, 0, 0, 0.15);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Adiciona um espaço interno para não ficar colado nas bordas */
+}
+
+legend {
+  display: block;
+  float: left; /* Empurra a legenda para dentro da caixa */
+  width: 100%; /* Garante que ela ocupe a linha toda */
+  margin-bottom: 8px; /* Cria um espaço entre o título e os campos de texto */
+}
+
+/* Ajuste específico para centralizar o texto do título principal */
+.header-titulo {
+    text-align: center;
+}
+
+/* --- ALINHAMENTO (Um ao lado do outro) --- */
+.container-botoes {
+  display: flex;          /* É este comando que coloca eles lado a lado! */
+  gap: 15px;              /* Define o espaço em branco entre um botão e outro */
+  justify-content: flex-start; /* Alinha tudo à esquerda. Se quiser no centro, use 'center' */
+}
+
+/* --- ESTILO DOS BOTÕES --- */
+.botao {
+  text-decoration: none;  /* Remove o sublinhado padrão dos links */
+  background-color: #4c8bf5; /* Cor de fundo azul (mude como quiser) */
+  color: white;           /* Cor do texto */
+  padding: 10px 20px;     /* Espaçamento interno (10px em cima/baixo, 20px nas laterais) */
+  border-radius: 5px;     /* Cantos arredondados do botão */
+  font-family: Inter, sans-serif; /* Fonte do texto */
+  font-weight: bold;      /* Texto em negrito */
+  transition: 0.3s;       /* Deixa a animação de passar o mouse mais suave */
+}
+
+.botao-validar:hover {
+  background-color: #127317;
+}
+
+.botao-validar {
+  text-decoration: none;  /* Remove o sublinhado padrão dos links */
+  background-color: #3be21e; /* Cor de fundo azul (mude como quiser) */
+  color: rgb(245, 245, 245);           /* Cor do texto */
+  padding: 5px 10px;     /* Espaçamento interno (10px em cima/baixo, 20px nas laterais) */
+  border-radius: 5px;     /* Cantos arredondados do botão */
+  font-family: Inter, sans-serif; /* Fonte do texto */
+  font-weight: bold;      /* Texto em negrito */
+  transition: 0.3s;       /* Deixa a animação de passar o mouse mais suave */
+  cursor: pointer; /* Força o mouse a virar a "mãozinha" de clique */
+  border: none;    /* Remove a borda padrão do navegador no <button> */
+}
+
+
+/* Efeito ao passar o mouse por cima do botão */
+.botao:hover {
+  background-color: #356ac3; /* Fica um azul mais escuro */
+}
+
+/* 1. Cria a animação de brilho (piscar) */
+@keyframes piscar-alvo {
+  0% { 
+    box-shadow: 0 0 0px transparent; 
+  }
+  30% { 
+    /* Cria um brilho azul ao redor da área principal */
+    box-shadow: 0 0 25x #245fc5; 
+    
+    /* Opcional: também dá uma leve escurecida no fundo para chamar mais atenção */
+    /* background-color: rgba(76, 139, 245, 0.1); */ 
+  }
+  100% { 
+    box-shadow: 0 0 0px transparent; 
+  }
+}
+
+/* 2. Aplica a animação quando a <main> for o destino do link */
+#conteudo-principal:target {
+  animation: piscar-alvo 1.5s ease-out; /* A animação vai durar 1.5 segundos */
+  border-radius: 8px; /* Opcional: arredonda levemente os cantos do brilho se a sua letterbox for quadrada */
+}
+
+/* 1. Cria a animação com brilho e escurecimento do fundo */
+@keyframes piscar-alvo {
+  0% { 
+    /* Mantém a sombra original da sua .letterbox */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), 0 0 0 0 transparent; 
+  }
+  30% { 
+    /* 
+      Valor 1: O brilho azul normal ao redor da caixa 
+      Valor 2: Uma sombra preta gigante (9999px) com 60% de opacidade que cobre a tela inteira 
+    */
+    box-shadow: 0 0 25px #245fc5, 0 0 0 9999px rgba(0, 0, 0, 0.6); 
+  }
+  100% { 
+    /* Volta para a sombra original da sua .letterbox */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), 0 0 0 0 transparent; 
+  }
+}
+
+/* 2. Aplica a animação no destino */
+#conteudo-principal:target {
+  animation: piscar-alvo 1.5s ease-out;
+  border-radius: 8px;
+  
+  /* Essencial: garante que a caixa e sua sombra gigante fiquem por cima do banner e do menu durante o piscar */
+  position: relative; 
+  z-index: 999; 
+}
+
+/* Estrutura principal da tabela */
+.tabela-moderna {
+  width: 100%; /* Faz a tabela esticar até os limites da letterbox */
+  border-collapse: collapse; /* Remove as bordas duplas do HTML antigo */
+  margin-top: 15px;
+  font-family: Inter, sans-serif;
+}
+
+/* Estilo das células (cabeçalhos e dados) */
+.tabela-moderna th, 
+.tabela-moderna td {
+  padding: 16px; /* Aumenta o espaço interno, deixando a tabela maior e mais limpa */
+  text-align: left; /* Alinha o texto à esquerda para facilitar a leitura */
+  border-bottom: 1px solid rgba(232, 231, 241, 0.4); /* Linha divisória sutil */
+}
+
+/* Destaque para o cabeçalho (Topo da tabela) */
+.tabela-moderna th {
+  background-color: rgba(76, 139, 245, 0.85); /* Fundo azul semi-transparente */
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase; /* Deixa as letras em maiúsculo */
+  font-size: 0.9rem;
+}
+
+/* Arredondar os cantos superiores do cabeçalho */
+.tabela-moderna th:first-child {
+  border-top-left-radius: 8px;
+}
+.tabela-moderna th:last-child {
+  border-top-right-radius: 8px;
+}
+
+/* Efeito ao passar o mouse por cima das linhas */
+.tabela-moderna tbody tr {
+  transition: background-color 0.3s;
+}
+
+.tabela-moderna tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Clareia a linha levemente ao focar o mouse */
+
+  
+}
+
+.caption-tabela {
+  caption-side: top; /* Garante que o texto se mantém no topo da tabela */
+  text-align: center; /* Mantém o texto centrado, como mostra na sua imagem */
+  margin-top: 5px; /* Afasta ligeiramente o texto do título "Meus Questionários" */
+  margin-bottom: 15px; /* Cria o espaçamento entre o texto e o cabeçalho azul da tabela */
+  font-size: 0.95rem; /* Torna a letra um pouco mais pequena para parecer um subtítulo */
+  color: #333333; /* Cor do texto */
+  padding: 0 10px; /* Garante que o texto não cola nas bermas em ecrãs mais pequenos */
+}
+
+/* Ajuste específico para o rodapé ficar centralizado e com texto menor */
+.rodape {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+}
